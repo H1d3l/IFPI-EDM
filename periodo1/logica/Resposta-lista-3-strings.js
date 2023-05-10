@@ -96,8 +96,6 @@ function quest06() {
     }
 
     console.log(palavra);
-
-
 }
 
 function quest07() {
@@ -131,4 +129,24 @@ function quest08() {
     console.log(`O texto digitado tem ${caracteres} caracteres e ${palavras} palavras.`);
 
 }
-quest08();
+function quest09() {
+    let nomecompleto = prompt("Digite um texto:");
+    let nomelista = nomecompleto.split(' ');
+    let sobrenome = nomelista[nomelista.length - 1]
+
+    console.log("Seu sobrenome é:", sobrenome);
+}
+
+function quest10() {
+    let frase = prompt("Digite uma frase:");
+    let contador = 0;
+
+    for (let i = 0; i < frase.length; i++) {
+        if (frase[i] === " ") {
+            contador++;
+        }
+    }
+
+    console.log("A frase contém", contador, "espaços em branco.");
+
+}
